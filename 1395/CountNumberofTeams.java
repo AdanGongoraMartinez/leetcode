@@ -24,12 +24,14 @@ public class CountNumberofTeams {
           rightLarger++;
       }
 
-      teams *= leftSmaller * rightLarger;
+      teams += leftSmaller * rightLarger;
+      System.out.println(leftSmaller + "" + rightLarger + "   " + teams);
 
       int leftLarger = mid - leftSmaller;
       int rightSmaller = rating.length - mid - 1 - rightLarger;
 
       teams += leftLarger * rightSmaller;
+      System.out.println(leftLarger + "" + rightSmaller + "   " + teams);
     }
 
     return teams;
